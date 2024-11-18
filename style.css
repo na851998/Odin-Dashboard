@@ -1,0 +1,393 @@
+:root {
+    --sizebar-width: 300px;
+    --primary-color: #fef9f2;
+    --secondary-color: #789bdc;
+    --third-color: #e4c2c2;
+    --fourth-color: #a1c7ac;
+    --fifth-color: #ddd;
+    --text-color: #444;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: #888 #f1f1f1;
+    scrollbar-width: thin;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* TOGGLE BTN */
+.toggle-btn {
+    color: #888;
+    border: 2px solid #888;
+    border-radius: 5px;
+    padding: 0.1rem 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: none;
+}
+
+/* CLOSE BTN */
+.close-btn {
+    padding: 0.2rem;
+    border: 2px solid #555;
+    cursor: pointer;
+    background: none;
+    border-radius: 5px;
+}
+
+.close-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.close-btn:hover {
+    border: 2px solid var(--fifth-color);
+}
+
+/* OVERLAY */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+    width: var(--sizebar-width);
+    overflow-y: auto;
+    background-color: var(--primary-color);
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+
+/* LOGO */
+.logo {
+    margin-top: 1rem;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 50px;
+}
+
+.logo-text {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+/* MENU */
+.menu {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.menu-item {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 1rem;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menu-item:hover {
+    background: var(--secondary-color);
+}
+
+.menu-icon {
+    width: 2rem;
+}
+
+.menu-text {
+    font-size: 1.1rem;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    border-bottom: 1px solid #999;
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+/* grid 1 */
+.header-1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.search-bar {
+    background-color: var(--fifth-color);
+    padding: 8px 20px;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.header-1 input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+.header-1 img {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* grid 2 */
+.header-2 {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    justify-content: center;
+}
+
+.header-2 img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+}
+
+.header-2 .profile span {
+    font-size: 1.5vw;
+    font-weight: bold;
+    display: none;
+}
+
+/* grid 3 */
+.header-3 img {
+    width: 70px;
+    height: 70px;
+}
+
+.profile .greeting {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.header-3 .username {
+    font-size: 1.5rem;
+}
+
+/* grid 4 */
+.header-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-4 button {
+    width: 30%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    flex: 1;
+    /* SUPER IMPORTANT: hide overflow content */
+    display: grid;
+    overflow: hidden;
+    background-color: #e2e8f0;
+}
+
+/* PROJECTS */
+.projects {
+    display: grid;
+    overflow-y: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem 2rem;
+    color: var(--text-color);
+}
+
+.projects .title {
+    grid-column: 1 / -1;
+    font-weight: 500;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #666;
+}
+
+.project .decorator {
+    background-color: var(--fourth-color);
+    border-radius: 2px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+}
+
+.project-links img {
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+/* SIDE-CONTENT */
+.side-content {
+    display: none;
+    color: var(--text-color);
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.side-content .title {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.announcements,
+.trendings {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #666;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.announcement-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.trending {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.trending-title {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.trending img {
+    width: 3rem;
+}
+
+@media screen and (min-width:1024px) {
+    .sidebar {
+        display: inline-block;
+        position: relative;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: none;
+    }
+
+    .overlay.active {
+        display: none;
+    }
+
+    .header-2 .profile span {
+        display: inline;
+    }
+
+    .main-content {
+        grid-template-columns: 10fr 4fr;
+    }
+
+    .side-content {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+	<link
+      rel="icon"
+      href="https://www.svgrepo.com/show/468479/dashboard.svg"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="sidebar">
+      <a href="#home" class="logo">
+        <img
+          class="logo-img"
+          src="https://www.svgrepo.com/show/468479/dashboard.svg"
+          alt="dashboard"
+        />
+        <span class="logo-text">My dashboard</span>
+        <button class="close-btn">
+          <img src="https://www.svgrepo.com/show/12848/x-symbol.svg" alt="" />
+        </button>
+      </a>
+
+      <nav class="menu">
+        <a href="#home" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425195/home-dashboard-basic.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">Home</span>
+        </a>
+        <a href="#profile" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425203/account-profile-essential.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">Profile</span>
+        </a>
+        <a href="#messages" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425196/chat-message-essential.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">Messages</span>
+        </a>
+        <a href="#history" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425158/deivery-return-ecommerce.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">History</span>
+        </a>
+        <a href="#tasks" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425128/office-school-ecommerce.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">Tasks</span>
+        </a>
+        <a href="#communities" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425157/complain-ecommerce-shop.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">Communities</span>
+        </a>
+        <a href="#settings" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425116/setting-preferences-basic.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">Settings</span>
+        </a>
+        <a href="#support" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425173/customer-service-earphone.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">Support</span>
+        </a>
+        <a href="#privacy" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425162/warranty-security-ecommerce.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">Privacy</span>
+        </a>
+        <a href="#announcements" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425156/promotion-ecommerce-shop.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">Announcements</span>
+        </a>
+        <a href="#trendings" class="menu-item">
+          <span class="menu-icon"
+            ><img
+              src="https://www.svgrepo.com/show/425136/like-love-ecommerce.svg"
+              alt=""
+          /></span>
+          <span class="menu-text">Trendings</span>
+        </a>
+      </nav>
+    </section>
+
+    <main>
+      <section class="header">
+        <div class="header-1">
+          <label for="search-bar">
+            <img
+              src="https://www.svgrepo.com/show/178322/search-search.svg"
+              alt=""
+            />
+          </label>
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." id="search-bar" />
+          </div>
+        </div>
+
+        <div class="header-2">
+          <img
+            src="https://www.svgrepo.com/show/425185/bell-notification-ecommerce.svg"
+            alt=""
+          />
+          <div class="profile">
+            <img src="https://www.svgrepo.com/show/12848/x-symbol.svg" alt="" />
+            <span>Nam Anh Tran</span>
+          </div>
+          <button class="toggle-btn">☰</button>
+        </div>
+
+        <div class="header-3">
+          <div class="profile">
+            <img src="https://www.svgrepo.com/show/12848/x-symbol.svg" alt="" />
+            <span class="greeting">
+              <span>Hi there,</span>
+              <span class="username">Nam Anh Tran</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="header-4">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </section>
+
+      <section class="main-content">
+        <div class="projects">
+          <div class="title">Your projects</div>
+
+          <div class="project">
+            <div class="decorator"></div>
+            <div class="project-content">
+              <div class="project-text">
+                <h1>My project</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+              <div class="project-links">
+                <img src="https://www.svgrepo.com/show/13695/star.svg" alt="" />
+                <img
+                  src="https://www.svgrepo.com/show/488189/eye-plus.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/489953/share.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="decorator"></div>
+            <div class="project-content">
+              <div class="project-text">
+                <h1>My project</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+              <div class="project-links">
+                <img src="https://www.svgrepo.com/show/13695/star.svg" alt="" />
+                <img
+                  src="https://www.svgrepo.com/show/488189/eye-plus.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/489953/share.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="decorator"></div>
+            <div class="project-content">
+              <div class="project-text">
+                <h1>My project</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+              <div class="project-links">
+                <img src="https://www.svgrepo.com/show/13695/star.svg" alt="" />
+                <img
+                  src="https://www.svgrepo.com/show/488189/eye-plus.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/489953/share.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="decorator"></div>
+            <div class="project-content">
+              <div class="project-text">
+                <h1>My project</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+              <div class="project-links">
+                <img src="https://www.svgrepo.com/show/13695/star.svg" alt="" />
+                <img
+                  src="https://www.svgrepo.com/show/488189/eye-plus.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/489953/share.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="decorator"></div>
+            <div class="project-content">
+              <div class="project-text">
+                <h1>My project</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+              <div class="project-links">
+                <img src="https://www.svgrepo.com/show/13695/star.svg" alt="" />
+                <img
+                  src="https://www.svgrepo.com/show/488189/eye-plus.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/489953/share.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="decorator"></div>
+            <div class="project-content">
+              <div class="project-text">
+                <h1>My project</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+              <div class="project-links">
+                <img src="https://www.svgrepo.com/show/13695/star.svg" alt="" />
+                <img
+                  src="https://www.svgrepo.com/show/488189/eye-plus.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/489953/share.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="decorator"></div>
+            <div class="project-content">
+              <div class="project-text">
+                <h1>My project</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+              <div class="project-links">
+                <img src="https://www.svgrepo.com/show/13695/star.svg" alt="" />
+                <img
+                  src="https://www.svgrepo.com/show/488189/eye-plus.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/489953/share.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="decorator"></div>
+            <div class="project-content">
+              <div class="project-text">
+                <h1>My project</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+              <div class="project-links">
+                <img src="https://www.svgrepo.com/show/13695/star.svg" alt="" />
+                <img
+                  src="https://www.svgrepo.com/show/488189/eye-plus.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/489953/share.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-content">
+          <span class="title">Announcements</span>
+          <div class="announcements">
+            <div class="announcement">
+              <div class="announcement-title">My project</div>
+              <div class="announcement-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="announcement">
+              <div class="announcement-title">My project</div>
+              <div class="announcement-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="announcement">
+              <div class="announcement-title">My project</div>
+              <div class="announcement-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry
+              </div>
+            </div>
+          </div>
+
+          <span class="title">Trendings</span>
+          <div class="trendings">
+            <div class="trending">
+              <img
+                src="https://www.svgrepo.com/show/495590/profile-circle.svg"
+                alt=""
+              />
+              <div class="trending-content">
+                <div class="trending-title">Hello world</div>
+                <div class="trending-text">Software Developer</div>
+              </div>
+            </div>
+
+            <div class="trending">
+              <img
+                src="https://www.svgrepo.com/show/495590/profile-circle.svg"
+                alt=""
+              />
+              <div class="trending-content">
+                <div class="trending-title">Hello world</div>
+                <div class="trending-text">Software Developer</div>
+              </div>
+            </div>
+
+            <div class="trending">
+              <img
+                src="https://www.svgrepo.com/show/495590/profile-circle.svg"
+                alt=""
+              />
+              <div class="trending-content">
+                <div class="trending-title">Hello world</div>
+                <div class="trending-text">Software Developer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="overlay"></div>
+    </main>
+  </body>
+</html>
